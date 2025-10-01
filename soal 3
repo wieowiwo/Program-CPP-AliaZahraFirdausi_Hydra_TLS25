@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Masukkan waktu (detik): ";
+    cin >> n;
+
+    int status = n % 3; // gunakan modulus untuk menentukan fase
+
+    if (status == 0) cout << "Lampu Merah" << endl;
+    else if (status == 1) cout << "Lampu Kuning" << endl;
+    else cout << "Lampu Hijau" << endl;
+
+    return 0;
+}
